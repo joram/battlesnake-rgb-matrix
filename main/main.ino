@@ -11,8 +11,13 @@ RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false);
   
 void setup() {
   matrix.begin();
+
   board_0(matrix);
   delay(3000);
+
+  board_1(matrix);
+  delay(3000);
+
 }
 
 void loop() {
